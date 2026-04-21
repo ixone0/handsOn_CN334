@@ -1,0 +1,47 @@
+# Python
+__pycache__/
+*.py[cod]
+*.pyo
+.venv/
+venv/
+env/
+
+# Environment
+.env
+.env.local
+.env.*.local
+
+# Database
+*.db
+*.sqlite3
+
+# Node
+node_modules/
+
+# Next.js
+.next/
+out/
+build/
+
+# Logs
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Test results
+appointment-api/tests/results/
+cn334-frontend/test-results/
+cn334-frontend/playwright-report/
+cn334-frontend/blob-report/
+cn334-frontend/playwright/.cache/
+cn334-frontend/playwright/.auth/
+
+# Misc
+*.pem
+.vercel
+*.tsbuildinfo
