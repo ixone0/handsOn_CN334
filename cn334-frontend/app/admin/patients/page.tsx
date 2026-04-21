@@ -1,8 +1,8 @@
 'use client'
 import React, { useState, useEffect } from 'react'
 import DataTable from '../components/DataTable'
- import Link from 'next/link'
- import { redirect } from 'next/navigation'
+import Link from 'next/link'
+import { redirect } from 'next/navigation'
 // 1. กำหนด Interface สำหรับข้อมูลคนไข้ที่รับมาจาก Backend
 interface PatientRecord {
   id: number
