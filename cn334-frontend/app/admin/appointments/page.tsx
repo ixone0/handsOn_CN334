@@ -23,7 +23,7 @@ useState<AppointmentRecord[]>([])
   }, [])
   const fetchAppointments = async () => {
     try {
-      const response = await fetch('http://localhost:3340/appointments')
+      const response = await fetch(`${process.env.NEXT_PUBLIC_API_URL}/appointments`)
       if (response.ok) {
         const result = await response.json()
         const data: AppointmentRecord[] = result.data || result
@@ -61,7 +61,7 @@ useState<AppointmentRecord[]>([])
   const handleDelete = async (item: AppointmentRecord) => {
     if (confirm(`คุณแน่ใจหรือไม่ที่จะยกเลิกคิวของ: ${item.fullName}?`)) {
       try {
-        const response = await fetch(`http://localhost:3340/appointments/${item.id}`, {
+        const response = await fetch(`${process.env.NEXT_PUBLIC_API_URL}/appointments/${item.id}`, {
           method: 'DELETE',
         })
         if (response.ok) {
